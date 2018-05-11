@@ -97,21 +97,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#title {
+  	background: -webkit-linear-gradient(#FF7B40, #FF2902);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+    padding: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nav {
+	background-color: #FF2902;
+	margin-bottom: 15px;
+}
 
 /* ==========================================================================
    Helper classes
