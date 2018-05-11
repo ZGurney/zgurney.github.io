@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Zinzan Gurney -- Lead Designer -- @pinpanz
 
 # THANKS
 
-    <name>
+    My family
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
     Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Bootstrap
