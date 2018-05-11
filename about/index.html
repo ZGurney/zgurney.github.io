@@ -11,9 +11,9 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -42,30 +42,6 @@
             </ul>
           </div>
         </nav>
-        
-        <div class="jumbotron">
-            <h2>Welcome</h2>
-            <p>An online experiment set up in 2018 as a means of exploring the world in a different light.</p>
-            <p class="lead"><a class="btn btn-primary btn-lg" href="about" role="button">Learn more</a></p>
-        </div>    
-            
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Think Tank Search</h2>
-            <p>A customised search engine designed to find in-depth and unbiased reports on the global economy, social inequalities and sustainiblity in a rapidly changing world.</p>
-            <p><a class="btn btn-default" href="projects/search" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Shanghai's Rise to Power</h2>
-            <p>To what extent where municipal government policies and stragies the main cause of Shanghai's ascent to China's dominant financial centre after the 1980s?</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Questions</h2>
-            <p>Have you ever had a question about the world that you can't answer? If you can't answer this question, then explore this section to learn more.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
 
         <hr>
 
@@ -75,13 +51,28 @@
             
         </main>
         
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyBHaWN50jUzQXXngAfXCOpRSbFknrocB5w",
+            authDomain: "zinzan-gurney.firebaseapp.com",
+            databaseURL: "https://zinzan-gurney.firebaseio.com",
+            projectId: "zinzan-gurney",
+            storageBucket: "zinzan-gurney.appspot.com",
+            messagingSenderId: "497542264733"
+          };
+          firebase.initializeApp(config);
+        </script>
+        
+        <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+        <script type="text/javascript" src="../js/vendor/bootstrap.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
 
     </body>
 </html>
