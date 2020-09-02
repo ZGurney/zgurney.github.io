@@ -1,8 +1,11 @@
 {
-    "icons": [{
-        "src": "icon.png",
-        "sizes": "192x192",
-        "type": "image/png"
-    }],
-    "start_url": "/"
+  "short_name": "Zinzan",
+  "name": "Zinzan Gurney",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
 }
