@@ -1,17 +1,27 @@
 {
-  "name": " ",
+  "name": "zinzan-package",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
-  "author": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Zinzan Gurney",
   "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css-build": "node-sass --omit-source-map-url css/sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  }
+    "bulma": "^0.9.0",
+    "node-sass": "^4.14.1" 
+  },
+  "dependencies": {},
+  "main": "css/sass/mystyles.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZGurney/zgurney.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZGurney/zgurney.github.io/issues"
+  },
+  "homepage": "https://github.com/ZGurney/zgurney.github.io#readme",
+  "description": ""
 }
