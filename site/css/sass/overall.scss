@@ -1,10 +1,7 @@
 @charset "utf-8";
 
-/* Import HTML5 boilerplate CSS */
-@import "boilerplate.css";
-
 /* Import Bulma */
-@import "../../node_modules/bulma/bulma.sass";
+@import "../../../node_modules/bulma/bulma.sass";
 
 /* Import Fontawesome */
 @import "../fontawesome/fontawesome.scss";
