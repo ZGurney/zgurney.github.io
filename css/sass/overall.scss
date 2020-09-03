@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* Import HTML5 boilerplate CSS */
+@import "boilerplate.css";
+
+/* Import Bulma */
+@import "../../node_modules/bulma/bulma.sass";
+
+/* Import Fontawesome */
+@import "../fontawesome/fontawesome.scss";
+@import "../fontawesome/brands.scss";
+@import "../fontawesome/solid.scss";
+@import "../fontawesome/regular.scss";
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* Import my own styles */
+@import "mystyle.scss";

@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "Zinzan Gurney",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url css/sass/mystyles.scss css/mystyles.css",
+    "css-build": "node-sass --omit-source-map-url css/sass/overall.scss css/overall.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
   },
@@ -14,7 +14,7 @@
     "node-sass": "^4.14.1" 
   },
   "dependencies": {},
-  "main": "css/sass/mystyles.css",
+  "main": "css/sass/overall.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZGurney/zgurney.github.io.git"
