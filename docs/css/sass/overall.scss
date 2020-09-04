@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* Import Bulma */
-@import "../../../node_modules/bulma/bulma.sass";
-
 /* Import Fontawesome */
 @import "../fontawesome/fontawesome.scss";
 @import "../fontawesome/brands.scss";
@@ -10,7 +7,15 @@
 @import "../fontawesome/regular.scss";
 
 /* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600&display=swap");
+
+/* Import Bulma customised variables */
+@import "custom-bulma.scss";
+
+/* Import Bulma */
+@import "../../../node_modules/bulma/bulma.sass";
 
 /* Import my own styles */
 @import "mystyle.scss";

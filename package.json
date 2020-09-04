@@ -5,16 +5,18 @@
   "license": "ISC",
   "author": "Zinzan Gurney",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url site/css/sass/overall.scss site/css/overall.css",
+    "watch": "onchange 'scss/**/*.scss' -- npm run css-build",
+    "css-build": "node-sass --omit-source-map-url docs/css/sass/overall.scss docs/css/overall.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
   },
   "devDependencies": {
     "bulma": "^0.9.0",
-    "node-sass": "^4.14.1" 
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2"
   },
   "dependencies": {},
-  "main": "site/css/sass/overall.css",
+  "main": "docs/css/sass/overall.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZGurney/zgurney.github.io.git"

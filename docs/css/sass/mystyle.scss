@@ -1,4 +1,4 @@
-$cursive-font: "Shadows Into Light", handwriting; 
+$cursive-font: "Shadows Into Light", handwriting;
 
 #main-box {
     padding: 0;
@@ -13,12 +13,46 @@ $cursive-font: "Shadows Into Light", handwriting;
     transform: rotate(-5deg);
 }
 
+#face {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .cursive {
     font-family: $cursive-font;
 }
 
-body, html {
-    height: 100%;
+.title {
+    letter-spacing: 0.1rem;
+}
+
+a {
+    border-bottom: 0.1rem solid currentColor;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+.social-media {
+    border-bottom: 0.15rem solid currentColor;
+    border-top: none;
+    display: inline-block;
+    line-height: 0.8rem;
+    color: $link;
+}
+
+.mybutton.to-activity {
+    height: 5rem;
+    transition: background-color 0.1s;
+    &:hover  {
+        color: white;
+        background-color: $dark;
+    }
+    span {
+        border-bottom: 0.1rem solid currentColor;
+        display: inline-block;
+        line-height: 1.2;
+    }
 }
 
 /* 
@@ -26,14 +60,15 @@ Main: #00d1b0
 Secondary: #3273dc
 */
 
-body {
+html {
     /* 
     Generated using heropatterns.com 
     Background: #c2f0e9
     Forground: #27635a
     */
     background-color: #c2f0e9;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2327635a' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");   
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2327635a' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); 
+    
 
     /*
     background: rgb(0,209,176);
