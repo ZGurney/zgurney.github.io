@@ -6,6 +6,10 @@ $weight-bold: 600;
 $tablet: 700px;
 $size-7: 0.9rem;
 
+$dark: hsl(0, 0%, 21%);
+/* From bahaiworld.bahai.org */
+$dark-blue: #1e2831;
+
 /* Customise tabs navigation
 $tabs-border-bottom-color: white;
 $tabs-link-hover-border-bottom-color: white;
@@ -13,7 +17,11 @@ $tabs-link-active-border-bottom-color: white;
 */
 
 /* Customise tabs toggle navigation */
-$tabs-toggle-link-border-color: hsl(0, 0%, 21%);
-$tabs-toggle-link-hover-border-color: hsl(0, 0%, 21%);
-$tabs-toggle-link-active-background-color: hsl(0, 0%, 21%);
-$tabs-toggle-link-active-border-color: hsl(0, 0%, 21%);
+$tabs-toggle-link-border-color: $dark-blue;
+$tabs-toggle-link-hover-border-color: $dark-blue;
+$tabs-toggle-link-active-background-color: $dark-blue;
+$tabs-toggle-link-active-border-color: $dark-blue;
+
+/* Customise footer */
+$footer-background-color: $dark-blue;
+$footer-color: white;

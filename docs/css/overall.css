@@ -5,7 +5,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap");
 .fa,
 .fas,
 .far,
@@ -4587,12 +4587,14 @@ readers do not read off random characters that represent icons */
 
 /* Import fonts */
 /* Import Bulma customised variables */
+/* From bahaiworld.bahai.org */
 /* Customise tabs navigation
 $tabs-border-bottom-color: white;
 $tabs-link-hover-border-bottom-color: white;
 $tabs-link-active-border-bottom-color: white;
 */
 /* Customise tabs toggle navigation */
+/* Customise footer */
 /* Import Bulma */
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
@@ -9176,14 +9178,14 @@ label.panel-block {
     flex-grow: 1;
     flex-shrink: 0; }
   .tabs.is-toggle a {
-    border-color: #363636;
+    border-color: #1e2831;
     border-style: solid;
     border-width: 1px;
     margin-bottom: 0;
     position: relative; }
     .tabs.is-toggle a:hover {
       background-color: whitesmoke;
-      border-color: #363636;
+      border-color: #1e2831;
       z-index: 2; }
   .tabs.is-toggle li + li {
     margin-left: -1px; }
@@ -9194,8 +9196,8 @@ label.panel-block {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px; }
   .tabs.is-toggle li.is-active a {
-    background-color: #363636;
-    border-color: #363636;
+    background-color: #1e2831;
+    border-color: #1e2831;
     color: #fff;
     z-index: 1; }
   .tabs.is-toggle ul {
@@ -12074,8 +12076,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem; }
+  background-color: #1e2831;
+  padding: 3rem 1.5rem 6rem;
+  color: white; }
 
 /* Import my own styles */
 /* My variables */
@@ -12101,12 +12104,30 @@ a.underline {
 .title {
   letter-spacing: 0.1rem; }
 
+.engrave {
+  /* text-shadow: 0px -0.2rem 0px rgba(0,0,0,.5); */
+  text-shadow: 0.2rem 0.2rem 5px rgba(0, 0, 0, 0.5);
+  font-weight: 700; }
+  .engrave.title {
+    font-size: 4rem; }
+
+/* Similar to http://www.ximenavengoechea.com/ footer */
 .social-media {
-  border-bottom: 0.15rem solid currentColor;
-  border-top: none;
-  display: inline-block;
-  line-height: 0.8rem;
-  color: #3273dc; }
+  /*
+    border-bottom: 0.15rem solid currentColor;
+    border-top: none;
+    display: inline-block;
+    line-height: 0.8rem;
+    color: $link;
+    */ }
+  .social-media p:hover > a {
+    transition-duration: 0.5s;
+    color: #4a4a4a; }
+  .social-media a {
+    transition-duration: 0.1s;
+    color: white; }
+    .social-media a:hover > span {
+      color: white; }
 
 .mybutton.to-activity {
   height: 5rem;
@@ -12153,17 +12174,10 @@ header {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: -2.5rem; }
-  .tabs.is-toggle ul li a {
-    background-color: white;
-    border-color: #363636;
-    /*
-        background-image: url('../img/ornament.svg');
-        background-position: right -1.6rem bottom -0.3rem;
-        background-repeat: no-repeat;
-        */ }
-  .tabs.is-toggle ul li {
-    /* 
+  top: -2.5rem;
+  /* 
+    ul li {
+        
         color: $black;
         border-right: 1px solid #000; 
 
@@ -12178,6 +12192,16 @@ header {
         &:hover {
             background: $grey-light;
         }
+        
+    }
+    */ }
+  .tabs.is-toggle ul li a {
+    background-color: white;
+    border-color: #363636;
+    /*
+        background-image: url('../img/ornament.svg');
+        background-position: right -1.6rem bottom -0.3rem;
+        background-repeat: no-repeat;
         */ }
 
 /*
@@ -12186,10 +12210,33 @@ li.is-active {
     color: $white;
 }
 */
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
 figure {
   display: block;
   margin: 0 auto; }
 
+/*
+.image.is-128x128.pattern-offset {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+}
+
+.pattern-offset-parent {
+    position: relative;
+}
+*/
 hr {
   margin: 1rem 0 0.5rem 0;
   /*

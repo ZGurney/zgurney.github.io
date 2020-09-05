@@ -29,12 +29,36 @@ a.underline {
     letter-spacing: 0.1rem;
 }
 
+.engrave {
+    /* text-shadow: 0px -0.2rem 0px rgba(0,0,0,.5); */
+    text-shadow: 0.2rem 0.2rem 5px rgba(0,0,0,.5);
+    font-weight: 700;
+    &.title {
+        font-size: 4rem;
+    }
+}
+
+/* Similar to http://www.ximenavengoechea.com/ footer */
 .social-media {
+    p:hover > a {
+        transition-duration: 0.5s;
+        color: $grey-dark;
+    }
+    a {
+        transition-duration: 0.1s;
+        color: $white;
+        &:hover > span {
+            color: $white;
+        }
+    }
+
+    /*
     border-bottom: 0.15rem solid currentColor;
     border-top: none;
     display: inline-block;
     line-height: 0.8rem;
     color: $link;
+    */
 }
 
 .mybutton.to-activity {
@@ -106,9 +130,9 @@ header {
         background-repeat: no-repeat;
         */
     }
-
+    /* 
     ul li {
-        /* 
+        
         color: $black;
         border-right: 1px solid #000; 
 
@@ -123,8 +147,9 @@ header {
         &:hover {
             background: $grey-light;
         }
-        */
+        
     }
+    */
 }
 /*
 li.is-active {
@@ -133,10 +158,35 @@ li.is-active {
 }
 */
 
+.logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 figure {
     display: block;
     margin: 0 auto;
 }
+
+/*
+.image.is-128x128.pattern-offset {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+}
+
+.pattern-offset-parent {
+    position: relative;
+}
+*/
 
 hr {
     margin: 1rem 0 0.5rem 0;
