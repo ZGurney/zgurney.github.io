@@ -28,12 +28,12 @@
 <!-- Add your site or application content here -->
 <section class="section">
   <div class="columns is-centered">
-    <div class="box column is-three-quarters-tablet is-half-desktop" id="main-box">
+    <main class="box column is-three-quarters-tablet is-half-desktop" id="main">
 
-      <div class="hero is-primary is-bold">
+      <header class="hero is-primary is-bold">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-1 has-text-right">
+            <h1 class="title is-size-1-tablet is-size-2-mobile has-text-right">
               Zinzan Gurney
             </h1>
             <h2 class="subtitle has-text-right">
@@ -41,13 +41,31 @@
             </h2>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div class="container" id="main-content">
+      <article class="container">
 
-        <section class="columns is-vcentered is-desktop">
+        <div class="tabs is-toggle is-toggle-rounded is-centered is-size-7-mobile has-text-weight-semibold">
+          <ul>
+            <li class="is-active mynav"><a>Home</a></li>
+            <li class="mynav"><a>Writing</a></li>
+            <li class="mynav"><a>Explore</a></li>
+            <li class="mynav"><a>Contact</a></li>
+          </ul>
+        </div>
+
+        <section class="columns is-vcentered">
           <div class="column is-narrow">
-            <figure class="image is-128x128 column">
+            <!-- 
+            <div class="columns is-centered">
+              <div class="column is-narrow">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="https://www.gravatar.com/avatar/b6002a7cca3ebc020e4323bd1fb13096?s=128">
+                </figure>
+              </div>
+            </div>
+            -->
+            <figure class="image is-128x128">
               <img class="is-rounded" src="https://www.gravatar.com/avatar/b6002a7cca3ebc020e4323bd1fb13096?s=128">
             </figure>
             <p id="hello" class="has-text-centered cursive is-size-4">
@@ -59,7 +77,7 @@
               <p>
                 <strong>Currently studying for an MEng in Engineering at the University of Cambridge.</strong> 
                 <br>
-                As a member of the <a href="https://iticam.org">Impact Through Innovation Cambridge</a> society, I have been contributing to the discourse on technology and development as well as a technical member on a number of engineering projects, including the Kilifi Recycle team in developing a process of recycling plastic into construction materials. In addition, I participate in community-building efforts initiated by the <a href="https://www.bahai.org.uk/">Baha'i community</a> and engage in the discourse on religion in society through the <a href="https://faithsunitedyn.org">Faiths United Youth Network</a>.
+                As a member of the <a href="https://iticam.org" class="underline">Impact Through Innovation Cambridge</a> society, I have been contributing to the discourse on technology and development as well as a technical member on a number of engineering projects, including the Kilifi Recycle team in developing a process of recycling plastic into construction materials. In addition, I participate in community-building efforts initiated by the <a href="https://www.bahai.org.uk/" class="underline">Baha'i community</a> and engage in the discourse on religion in society through the <a href="https://faithsunitedyn.org" class="underline">Faiths United Youth Network</a>.
               </p>
             </div>
           </div>
@@ -67,8 +85,13 @@
 
         <section class="columns is-centered is-multiline">
           <div class="column is-full">
+            <!--
+              <figure class="image is-48x48">
+                <img src="img/ornament.svg">
+              </figure>
+            -->
             <hr>
-            <h2>Start exploring:</h2>
+            <h2 class="has-text-weight-semibold">Start exploring:</h2>
           </div>
 
           <div class="column is-half">
@@ -91,9 +114,9 @@
               <span>Watch videos on YouTube</span>
             </a>
           </div>
-
         </section>
 
+        <!-- Social media icons -->
         <section class="columns is-centered">
           <div class="column is-half">
             <p class="has-text-centered">
@@ -120,46 +143,10 @@
             </p>
           </div>
         </section>
-            
-            <!---
-            <div class="columns">
-              <div class="column is-narrow is-offset-2">
-                <div class="level">
-                  <span class="icon is-large level-item">
-                    <i class="fab fa-3x fa-linkedin"></i>
-                  </span>
-                  <span class="level-item">Linkedin</span>
-                </div>
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column is-narrow is-offset-7">
-                <div class="level">
-                  <span class="icon is-large level-item">
-                    <i class="fab fa-3x fa-github-square"></i>
-                  </span>
-                  <span class="level-item">GitHub</span>
-                </div>
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column is-narrow">
-                <div class="level">
-                  <span class="icon is-large level-item">
-                    <i class="fab fa-3x fa-youtube-square"></i>
-                  </span>
-                  <span class="level-item">YouTube</span>
-                </div>
-              </div>
-            </div>
-            -->
-            
-          </div>
-        </section>
 
-      </div>
+      </article>
 
-    </div>
+    </main>
   </div>
 </section>
 

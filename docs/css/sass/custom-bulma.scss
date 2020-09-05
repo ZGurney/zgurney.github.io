@@ -3,3 +3,17 @@ $title-family:  "Vollkorn", serif;
 $weight-light: 300;
 $weight-normal: 400;
 $weight-bold: 600;
+$tablet: 700px;
+$size-7: 0.9rem;
+
+/* Customise tabs navigation
+$tabs-border-bottom-color: white;
+$tabs-link-hover-border-bottom-color: white;
+$tabs-link-active-border-bottom-color: white;
+*/
+
+/* Customise tabs toggle navigation */
+$tabs-toggle-link-border-color: hsl(0, 0%, 21%);
+$tabs-toggle-link-hover-border-color: hsl(0, 0%, 21%);
+$tabs-toggle-link-active-background-color: hsl(0, 0%, 21%);
+$tabs-toggle-link-active-border-color: hsl(0, 0%, 21%);

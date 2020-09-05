@@ -1,36 +1,32 @@
+/* My variables */
+/* 
+Main: #00d1b0
+Secondary: #3273dc
+*/
 $cursive-font: "Shadows Into Light", handwriting;
 
-#main-box {
-    padding: 0;
-    overflow: hidden;
-}
-
-#main-content {
-    padding: 1.25rem;
-}
-
-#hello {
-    transform: rotate(-5deg);
-}
-
-#face {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
+/* My helper classes */
 .cursive {
     font-family: $cursive-font;
 }
 
-.title {
-    letter-spacing: 0.1rem;
+.underline {
+    background-image: linear-gradient(#fcfcfc 93%, currentColor 93%);
 }
 
-a {
-    border-bottom: 0.1rem solid currentColor;
-    display: inline-block;
-    line-height: 1.2;
+a.underline {
+    color: $text;
+    &:hover {
+        background-image: linear-gradient($grey-lighter 93%, $grey-lighter 93%);
+    }
+}
+
+.overline {
+    border-top: 2px solid currentColor;
+}
+
+.title {
+    letter-spacing: 0.1rem;
 }
 
 .social-media {
@@ -44,8 +40,8 @@ a {
 .mybutton.to-activity {
     height: 5rem;
     transition: background-color 0.1s;
-    &:hover  {
-        color: white;
+    &:hover {
+        color: $white;
         background-color: $dark;
     }
     span {
@@ -55,10 +51,20 @@ a {
     }
 }
 
-/* 
-Main: #00d1b0
-Secondary: #3273dc
-*/
+/* My own styles */
+
+#main {
+    padding: 0;
+    overflow: hidden;
+}
+
+article {
+    padding: 1.25rem;
+}
+
+#hello {
+    transform: rotate(-5deg);
+}
 
 html {
     /* 
@@ -73,5 +79,71 @@ html {
     /*
     background: rgb(0,209,176);
     background: linear-gradient(120deg, rgba(0,209,176,1) 0%, rgba(50,115,220,1) 100%);
+    */
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+.tabs.is-toggle {
+
+    /* Positioning the navigation bar in between header and article */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -2.5rem;
+
+    ul li a {
+        background-color: $white;
+        border-color: $dark;
+
+        /*
+        background-image: url('../img/ornament.svg');
+        background-position: right -1.6rem bottom -0.3rem;
+        background-repeat: no-repeat;
+        */
+    }
+
+    ul li {
+        /* 
+        color: $black;
+        border-right: 1px solid #000; 
+
+        background-image: url('../img/ornament.svg');
+        background-position: right;
+        background-repeat: no-repeat;
+
+        background: $light;
+        &:last-child {
+            border: none;
+        }
+        &:hover {
+            background: $grey-light;
+        }
+        */
+    }
+}
+/*
+li.is-active {
+    background: $dark;
+    color: $white;
+}
+*/
+
+figure {
+    display: block;
+    margin: 0 auto;
+}
+
+hr {
+    margin: 1rem 0 0.5rem 0;
+    /*
+    background-color: $dark;
+    background-image: url('../img/ornament.svg');
+    background-position: center;
+    background-size: 48px 48px;
     */
 }
