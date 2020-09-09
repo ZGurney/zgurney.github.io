@@ -14,6 +14,9 @@
 /* Import Bulma customised variables */
 @import "_custom-bulma.scss";
 
+// Import pageclip form styling
+@import "pageclip.css";
+
 /* Import Bulma */
 @import "../../../node_modules/bulma/bulma.sass";
 

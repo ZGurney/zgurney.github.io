@@ -10,14 +10,17 @@ $cursive-font: "Shadows Into Light", handwriting;
     font-family: $cursive-font;
 }
 
+/* #fff, hsl(171, 100%, 96%) */
+
 .underline {
-    background-image: linear-gradient(#fcfcfc 93%, currentColor 93%);
+    background-image: linear-gradient(hsl(171, 100%, 100%) 93%, currentColor 93%);
 }
 
 a.underline {
     color: $text;
+    font-weight: 600;
     &:hover {
-        background-image: linear-gradient($grey-lighter 93%, $grey-lighter 93%);
+        background-image: linear-gradient($light 93%, $light 93%);
     }
 }
 
@@ -40,7 +43,8 @@ a.underline {
 
 /* Similar to http://www.ximenavengoechea.com/ footer */
 .social-media {
-    p:hover > a {
+    white-space: nowrap;
+    &:hover > a {
         transition-duration: 0.5s;
         color: $grey-dark;
     }
@@ -52,7 +56,15 @@ a.underline {
         }
     }
 
-    /*
+    /* Attempt at social media icons like on https://brittanychiang.com/
+    display: inline-block;
+    color: $grey-light;
+    transition-duration: 0.0s;
+    &:hover {
+        color: $white;
+        transform: translateY(-0.1rem);
+    }
+
     border-bottom: 0.15rem solid currentColor;
     border-top: none;
     display: inline-block;
@@ -118,7 +130,11 @@ header {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: -2.5rem;
+    top: -2.3rem;
+
+    @media (max-width: $tablet) {
+        top: -2.2rem;
+    }
 
     ul li a {
         background-color: $white;
@@ -196,4 +212,15 @@ hr {
     background-position: center;
     background-size: 48px 48px;
     */
+}
+
+/* From https://jgthms.com/contact/ and try https://joshwcomeau.com/snippets/html/scale-with-pseudoelements*/
+.input, .textarea {
+    box-shadow: none;
+    background-color: $light;
+    border: none;
+
+    &:hover, &:focus {
+        box-shadow: 0 0 0 .125rem $turquoise;
+    }
 }

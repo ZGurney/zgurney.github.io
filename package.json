@@ -8,12 +8,15 @@
     "watch": "onchange 'scss/**/*.scss' -- npm run css-build",
     "css-build": "node-sass --omit-source-map-url docs/css/sass/overall.scss docs/css/overall.css",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "start": "npm run css-watch",
+    "pre-push": "surge --project ./site --domain zinzan.surge.sh"
   },
   "devDependencies": {
     "bulma": "^0.9.0",
+    "git-scripts": "^0.4.3",
     "node-sass": "^4.14.1",
-    "onchange": "^7.0.2"
+    "onchange": "^7.0.2",
+    "surge": "^0.21.6"
   },
   "dependencies": {},
   "main": "docs/css/sass/overall.css",

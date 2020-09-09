@@ -45,6 +45,7 @@
 
       <article class="container">
 
+        <!-- Navigation bar -->
         <div class="tabs is-toggle is-toggle-rounded is-centered is-size-7-mobile has-text-weight-semibold">
           <ul>
             <li class="is-active mynav"><a>Home</a></li>
@@ -54,6 +55,7 @@
           </ul>
         </div>
 
+        <!-- About me section -->
         <section class="columns is-vcentered">
           <div class="column is-narrow">
             <!-- 
@@ -90,6 +92,7 @@
           </div>
         </section>
 
+        <!-- Explore more section -->
         <section class="columns is-centered is-multiline">
           <div class="column is-full">
             <!--
@@ -123,26 +126,63 @@
           </div>
         </section>
 
+        <!-- Contact section -->
+        <section>
+
+          <hr>
+          <h2 class="has-text-weight-semibold">Contact me:</h2>
+
+          <form action="https://send.pageclip.co/fucqNZx9kFsZTZAiuqwK7mJpLPk9zLp3/contact-form" class="pageclip-form" method="post">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input type="text" name="name" autocomplete="name" class="input" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input type="email" name="email" autocomplete="email" class="input" required>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea name="message" class="textarea" required></textarea>
+              </div>
+            </div>
+            
+            <div class="field is-grouped">
+              <div class="control">
+                <button type="submit" class="button is-primary pageclip-form__submit scale-background-on-hover" >Submit</button>
+              </div>
+            </div>
+          </form>
+        </section>
+
       </article>
       
-      <!-- Footer 
       <footer class="footer">
         <div class="content columns is-vcentered">
-          <div class="column">
+          <div class="column is-5 has-text-centered-mobile">
             <p>
-              "All men have been created to carry forward an ever-advancing civilization"
+              Designed by Zinzan Gurney
             </p>
-            <em>Baha'u'llah</em>
           </div>
 
-          <div class="column has-text-centered">
-            <h1 class="engrave title has-text-white">
+          <div class="column is-2 has-text-centered">
+            <h1 class="engrave title mb-0 has-text-white">
               Z
             </h1>
           </div>
 
-          <div class="column has-text-right social-media">
-            <p>
+          <div class="column is-5 has-text-right-tablet has-text-centered-mobile">
+            <p class="social-media">
               <a href="https://www.linkedin.com/in/zinzan">
                 <span class="icon is-large">
                   <i class="fab fa-lg fa-linkedin"></i>
@@ -167,8 +207,8 @@
           </div>
         </div>
       </footer>
-      -->
       
+      <!-- Footer 
       <footer class="footer">
         <div class="content level has-text-centered">
           <div class="level-left">
@@ -179,7 +219,8 @@
             </div>
           </div>
 
-          <div class="level-item logo is-hidden-mobile">
+          Problem with social media hover
+            <div class="level-item logo is-hidden-mobile">
             <h1 class="engrave title has-text-white">
               Z
             </h1>
@@ -213,6 +254,7 @@
           </div>
         </div>
       </footer>
+      -->
 
     </main>
   </div>
@@ -221,6 +263,7 @@
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/vendor/pageclip.js" charset="utf-8"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
