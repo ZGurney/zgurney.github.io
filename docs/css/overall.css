@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Import Fontawesome */
 /*!
  * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
@@ -6,7 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap");
-@import url(pageclip.css);
 .fa,
 .fas,
 .far,
@@ -4589,11 +4589,7 @@ readers do not read off random characters that represent icons */
 /* Import fonts */
 /* Import Bulma customised variables */
 /* From bahaiworld.bahai.org */
-/* Customise tabs navigation
-$tabs-border-bottom-color: white;
-$tabs-link-hover-border-bottom-color: white;
-$tabs-link-active-border-bottom-color: white;
-*/
+/* Customise hero */
 /* Customise tabs toggle navigation */
 /* Customise form */
 /* Customise footer */
@@ -12067,7 +12063,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: 3rem 1.5rem; }
+  padding: 3rem 1.5rem 4rem 1.5rem; }
 
 .section {
   padding: 3rem 1.5rem; }
@@ -12079,7 +12075,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .footer {
   background-color: #1e2831;
-  padding: 3rem 1.5rem 6rem;
+  padding: 0.5rem 3rem 6rem;
   color: white; }
 
 /* Import my own styles */
@@ -12106,7 +12102,25 @@ a.underline {
   border-top: 2px solid currentColor; }
 
 .title {
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.5rem; }
+
+.article-title {
+  font-weight: 300;
+  font-size: 3rem;
+  color: #2e4f6b;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2327635a' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  border-radius: 0.7rem;
+  border-bottom-left-radius: 0.9rem 16rem;
+  border-bottom-right-radius: 14rem 0.9rem;
+  border-top-left-radius: 16rem 0.9rem;
+  border-top-right-radius: 0.9rem 14rem;
+  border: 2px solid #2e4f6b;
+  padding: 0 1rem 0 1rem; }
+
+.wave {
+  margin-bottom: -0.2rem; }
 
 .engrave {
   /* text-shadow: 0px -0.2rem 0px rgba(0,0,0,.5); */
@@ -12159,7 +12173,7 @@ a.underline {
   overflow: hidden; }
 
 article {
-  padding: 1.25rem; }
+  padding: 3rem 3rem 0 3rem; }
 
 #hello {
   transform: rotate(-5deg); }
@@ -12179,6 +12193,42 @@ html {
 
 header {
   margin-bottom: 1rem; }
+
+h2.has-text-primary {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #ebfffc; }
+  h2.has-text-primary.is-size-3 {
+    letter-spacing: 0.1rem; }
+  h2.has-text-primary.is-size-5 {
+    display: flex; }
+    h2.has-text-primary.is-size-5::before {
+      display: flex;
+      content: "🎓";
+      font-size: 2.5rem;
+      align-items: center;
+      padding-right: 1rem; }
+
+.tagline {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 2rem;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2327635a' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  border-radius: 0.7rem;
+  border-bottom-left-radius: 0.9rem 16rem;
+  border-bottom-right-radius: 14rem 0.9rem;
+  border-top-left-radius: 16rem 0.9rem;
+  border-top-right-radius: 0.9rem 14rem;
+  border: 2px solid #4a4a4a;
+  padding: 1rem;
+  /*
+    &::before {
+        content: url("../img/ornament.svg");
+        padding-right: 0.5rem;
+    }
+    */ }
 
 .tabs.is-toggle {
   /* Positioning the navigation bar in between header and article */
@@ -12268,4 +12318,4 @@ hr {
   background-color: whitesmoke;
   border: none; }
   .input:hover, .input:focus, .textarea:hover, .textarea:focus {
-    box-shadow: 0 0 0 0.125rem #00d1b2; }
+    box-shadow: 0 0 0 0.125rem #4a4a4a; }

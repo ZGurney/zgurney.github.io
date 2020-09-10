@@ -11,11 +11,8 @@ $dark: hsl(0, 0%, 21%);
 $dark-blue: #1e2831;
 $primary: hsl(208, 40%, 30%);
 
-/* Customise tabs navigation
-$tabs-border-bottom-color: white;
-$tabs-link-hover-border-bottom-color: white;
-$tabs-link-active-border-bottom-color: white;
-*/
+/* Customise hero */
+$hero-body-padding: 3rem 1.5rem 4rem 1.5rem;
 
 /* Customise tabs toggle navigation */
 $tabs-toggle-link-border-color: $dark-blue;
@@ -29,3 +26,4 @@ $label-color: hsl(0, 0%, 29%);
 /* Customise footer */
 $footer-background-color: $dark-blue;
 $footer-color: white;
+$footer-padding: 0.5rem 3rem 6rem;
