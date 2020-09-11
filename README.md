@@ -1,5 +1,7 @@
 # Zinzan Gurney's Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/777a72a4-f50c-4015-b106-464a444d4ffe/deploy-status)](https://app.netlify.com/sites/zinzan/deploys)
+
 > An attempt to harmonise Zinzan Gurney's presence on the internet on one site.
 
 ## How was this website created?
