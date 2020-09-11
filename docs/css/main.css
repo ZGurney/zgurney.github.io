@@ -397,9 +397,9 @@ a.box:active {
   position: relative;
   width: auto;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
   .container {
-    max-width: 960px;
+    max-width: 1236px;
   }
 }
 @media screen and (min-width: 1216px) {
@@ -951,7 +951,7 @@ a.box:active {
     width: 41.6666666667%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
   .column.is-half-desktop {
     flex: none;
     width: 50%;
@@ -1155,7 +1155,7 @@ a.has-text-white:hover, a.has-text-white:focus {
 .section {
   padding: 3rem 1.5rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
   .section.is-large {
     padding: 18rem 1.5rem;
   }
