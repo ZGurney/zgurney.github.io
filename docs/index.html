@@ -16,9 +16,26 @@
 <link rel="apple-touch-icon" href="icon.png">
 <!-- Place favicon.ico in the root directory -->
 
+<!-- From https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" media="print" onload="this.media='all'" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" media="print" onload="this.media='all'" />
+
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" />
+</noscript>
+
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/boilerplate.css">
-<link rel="stylesheet" href="css/overall.css">
+<link rel="stylesheet" href="css/main.css">
 
 <meta name="theme-color" content="#fafafa">
 </head>
@@ -58,7 +75,7 @@
         <!-- About me section -->
         <div class="columns is-centered">
           <div class="column is-full">
-            <h2 class="is-size-5 has-text-weight-semibold has-text-primary">Currently studying for an MEng Engineering in Energy and Sustainability at the University of Cambridge</h2>
+            <h2 class="is-size-5 has-text-weight-semibold article-title tagline">Currently studying for an MEng Engineering in Energy and Sustainability at the University of Cambridge</h2>
           </div>
         </div>
         <section class="columns is-vcentered is-multiline">
@@ -236,16 +253,18 @@
 </section>
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-<script src="js/vendor/pageclip.js" charset="utf-8"></script>
+<!--
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/vendor/pageclip.js" charset="utf-8"></script>
 
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+-->
+
 </body>
 
 </html>
