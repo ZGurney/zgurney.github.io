@@ -12,7 +12,7 @@ jobs:
     - name: Audit Netlify deploy preview
       uses: jakejarvis/lighthouse-action@master
       with:
-        netlify_site: 'zinzan.netlify.com'
+        netlify_site: 'zinzan.netlify.app'
     - uses: actions/upload-artifact@master
       with:
         name: report
