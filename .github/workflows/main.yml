@@ -1,4 +1,4 @@
-# From https://github.com/marketplace/actions/lighthouse-ci-action
+# From https://github.com/marketplace/actions/lighthouse-audit
 name: Lighthouse CI for Netlify sites
 on:
   push:
@@ -6,27 +6,14 @@ on:
   pull_request:
     branches: [ master ]
 jobs:
-  build:
+  audit:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-      - name: Install & Build
-        run: |
-          yarn install
-          yarn build
-      - name: Wait for the Netlify Preview
-        uses: jakepartusch/wait-for-netlify-action@v1
-        id: netlify
-        with:
-          site_name: 'zinzan'
-      - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v3
-        with:
-          urls: |
-            ${{ steps.netlify.outputs.url }}
-          uploadArtifacts: true
+    - name: Audit Netlify deploy preview
+      uses: jakejarvis/lighthouse-action@master
+      with:
+        netlify_site: 'zinzan.netlify.com'
+    - uses: actions/upload-artifact@master
+      with:
+        name: report
+        path: './report'
