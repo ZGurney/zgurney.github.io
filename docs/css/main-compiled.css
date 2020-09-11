@@ -16170,6 +16170,7 @@ h2.has-text-primary {
 @media (max-width: 700px) {
   .tabs.is-toggle {
     top: -2.2rem;
+    font-size: 1rem;
   }
 }
 .tabs.is-toggle ul li a {
@@ -16201,22 +16202,12 @@ figure {
   margin: 0 auto;
 }
 
-/*
-.image.is-128x128.pattern-offset {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: 0 auto;
-    width: 140px;
-    height: 140px;
+img {
+  border: 0.15rem solid #008a75;
+  background-color: #008a75;
+  box-shadow: 0.15rem 0.15rem 5px rgba(0, 0, 0, 0.5);
 }
 
-.pattern-offset-parent {
-    position: relative;
-}
-*/
 hr {
   margin: 1rem 0 0.5rem 0;
   /*

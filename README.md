@@ -11,7 +11,9 @@ Mostly an individual initiative, the website consists mainly of plain vanilla HT
 - It started from [HTML5 Boilerplate](https://html5boilerplate.com/) as a basis.
 - [Jamstack](https://jamstack.org/) is the paradigm within which the site is developed.
 - The [Bulma](https://bulma.io/) CSS framework is used to beautify and layout the page.
-- The task runner Grunt is used to compile Sass, remove unused CSS with PurgeCSS.
+- The task runner [Grunt](https://gruntjs.com/) is used at developer and distribution build:
+    - to compile Sass with [offical tool](https://github.com/gruntjs/grunt-contrib-sass)
+    - to remove unused CSS with [PurgeCSS](https://purgecss.com/)
 
 ## What is the future of the website?
 
