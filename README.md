@@ -13,15 +13,19 @@ Mostly an individual initiative, the website consists mainly of plain vanilla HT
 - [Jamstack](https://jamstack.org/) is the paradigm within which the site is developed.
 - The [Bulma](https://bulma.io/) CSS framework is used to beautify and layout the page.
 - The task runner [Grunt](https://gruntjs.com/) is used at developer and distribution build:
-    - to compile Sass with [offical tool](https://github.com/gruntjs/grunt-contrib-sass)
-    - to remove unused CSS with [PurgeCSS](https://purgecss.com/)
+  - to compile Sass with [offical tool](https://github.com/gruntjs/grunt-contrib-sass)
+  - to remove unused CSS with [PurgeCSS](https://purgecss.com/)
+- Lighthouse reports are generated upon Netlify deploy using GitHub Actions:
+  - Wait for Netlify to deploy the site to zinzan.netlify.app using [Wait for Netlify Action](https://github.com/kamranayub/wait-for-netlify-action)
+  - Generate Lighthouse report using [Lighthouse CI Action](https://github.com/treosh/lighthouse-ci-action)
+  - Then save this report on a [private LHCI server](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/server.md) served by [Heroku](https://zgurney.herokuapp.com/app/projects/zgurney/dashboard) in order to view historical Lighthouse data, examine trends, and uncover differences between builds in detail
 
 ## What is the future of the website?
 
 - Integrating the [Eleventy](https://www.11ty.dev/) static site generator will be used for blog entries and project updates.
 - Move deployment from GitHub Pages to [Netlify](https://netlify.com/)
-    - Implement contact form with Netlify Forms
-    - Obtain domain name, most likely zinzan.me or zinzangurney.com
+  - Implement contact form with Netlify Forms
+  - Obtain domain name, most likely zinzan.me or zinzangurney.com
 
 ## Where does this website derive its inspiration?
 

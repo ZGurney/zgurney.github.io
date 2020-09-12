@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 options: {
-                    style: 'compressed',
+                    style: 'expanded',
                 },
                 files: {
                     'docs/css/main-compiled.css': 'docs/css/sass/main.scss'
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: ['Gruntfile.js', 'docs/css/sass/*.scss'],
-                tasks: ['sass:dev', 'purgecss:dist'],
+                tasks: ['sass:dist', 'purgecss:dist'],
                 reload: true
             }
         }
