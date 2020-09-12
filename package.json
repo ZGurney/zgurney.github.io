@@ -35,5 +35,5 @@
   "homepage": "https://github.com/ZGurney/zgurney.github.io#readme",
   "description": "",
   "private": true,
-  "main": "heroku/server.js"
+  "main": "server.js"
 }
