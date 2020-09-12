@@ -21,7 +21,7 @@
     "surge": "^0.21.6"
   },
   "dependencies": {
-    "@lhci/server": "0.4.x",
+    "@lhci/server": "^0.4.4",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3"
   },
