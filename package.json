@@ -20,7 +20,11 @@
     "subfont": "^5.2.1",
     "surge": "^0.21.6"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@lhci/server": "0.4.x",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZGurney/zgurney.github.io.git"
@@ -30,5 +34,6 @@
   },
   "homepage": "https://github.com/ZGurney/zgurney.github.io#readme",
   "description": "",
-  "private": true
+  "private": true,
+  "main": "heroku/server.js"
 }

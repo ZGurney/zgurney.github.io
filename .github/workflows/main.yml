@@ -1,24 +1,24 @@
 # From https://github.com/marketplace/actions/wait-for-netlify
-name: Lighthouse CI for Netlify deployment
+name: Lighthouse CI
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
 jobs:
-  lighthouse-audit-1:
-    name: Lighthouse Audit 1
+  lighthouse-audit:
+    name: Lighthouse Audit
     runs-on: ubuntu-latest
     steps:
       # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
       - uses: actions/checkout@v2
       # Wait for Netlify deployment from zinzan.netlify.app
       - name: Wait for Netlify deployment
-        uses: kamranayub/wait-for-netlify-action@v2.0.3
+        uses: kamranayub/wait-for-netlify-action@v2
         id: netlify
         with:
           site_name: "zinzan"
-          max_timeout: 10
+          max_timeout: 10 # Timeout is 10s, adjust depending on average build time
         env: 
           NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
       # Based on netlify url, run Lighthouse audit
@@ -26,31 +26,8 @@ jobs:
         uses: treosh/lighthouse-ci-action@v3
         with:
           urls: https://zinzan.netlify.app
-          uploadArtifacts: true # save results as an action artifacts
-          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
-  lighthouse-audit-2:
-    name: Lighthouse audit 2
-    runs-on: ubuntu-latest
-    steps:
-      # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
-      - uses: actions/checkout@v2
-      # Install node.js
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-      # Wait for Netlify deployment at zinzan.netlify.app
-      - name: Wait for Netlify deployment
-        uses: kamranayub/wait-for-netlify-action@v2.0.3
-        id: netlify
-        with:
-          site_name: "zinzan"
-          max_timeout: 10
-        env: 
-          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
-      - name: Lighthouse CI
-        run: |
-          npm install -g @lhci/cli@0.5.x
-          lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.netlify.outputs.url }} || echo "LHCI failed!"
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_SERVER_TOKEN }}
+          uploadArtifacts: true # Save results as an action artifacts
+          temporaryPublicStorage: true # Upload lighthouse report to the temporary storage
+          runs: 3 # Increase accuracy of results by running Lighthouse three times
+          serverBaseUrl: ${{ secrets.LHCI_SERVER_URL }} # Use Heroku app to store Lighthouse results
+          serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
