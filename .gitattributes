@@ -122,12 +122,12 @@ Procfile    text
 *.ico  binary
 *.jng  binary
 *.jp2  binary
-*.jpg  binary
+*.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg binary
 *.jpx  binary
 *.jxr  binary
 *.pdf  binary
-*.png  binary
+*.png filter=lfs diff=lfs merge=lfs -text
 *.psb  binary
 *.psd  binary
 *.svg  text
@@ -178,4 +178,3 @@ Procfile    text
 ## EXECUTABLES
 *.exe binary
 *.pyc binary
-img/ filter=lfs diff=lfs merge=lfs -text

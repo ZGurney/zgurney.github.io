@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <title>Zinzan Gurney - Contact</title>
-<meta name="description" content="Contact Zinzan Gurney">
+<meta name="description" content="Zinzan Gurney - Contact">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta property="og:title" content="">
@@ -66,8 +66,8 @@
         <div class="tabs is-toggle is-toggle-rounded is-centered is-size-7-mobile has-text-weight-semibold">
           <ul>
             <li class=""><a href="../">Home</a></li>
-            <li class=""><a>Writing</a></li>
-            <li class=""><a>Explore</a></li>
+            <li class=""><a href="../writing">Writing</a></li>
+            <li class=""><a href="../explore">Explore</a></li>
             <li class="is-active"><a>Contact</a></li>
           </ul>
         </div>
@@ -85,7 +85,10 @@
             Looking to get in touch? Would love to hear from you, just fill out the form below and I'll get back to you.
           </p>
 
-          <form action="https://send.pageclip.co/fucqNZx9kFsZTZAiuqwK7mJpLPk9zLp3/contact-form" class="pageclip-form" method="post">
+          <form name="contact" class="pageclip-form" method="post" data-netlify="true" action="/contact/success.html" netlify-honeypot="bot-field">
+            <p class="hidden">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <div class="field">
               <label class="label">Your name</label>
               <div class="control">
@@ -109,7 +112,7 @@
             
             <div class="field is-grouped">
               <div class="control">
-                <button type="submit" class="button is-primary pageclip-form__submit scale-background-on-hover" >Submit</button>
+                <button type="submit" class="button is-primary pageclip-form__submit scale-background-on-hover">Submit</button>
               </div>
             </div>
           </form>

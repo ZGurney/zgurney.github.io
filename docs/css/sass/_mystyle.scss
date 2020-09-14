@@ -178,12 +178,13 @@ header {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: -2.5rem;
+    top: -2.6rem;
 
     font-size: 1.2rem;
     font-weight: $weight-semibold;
 
     @media (max-width: $tablet) {
+        top: -2.5rem;
         font-size: 1.1rem;
         @media (max-width: 420px) {
             top: -2.2rem;
